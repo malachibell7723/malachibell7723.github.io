@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <title>Projects</title>
+    </head>
+
+    <body class="projects-page">
+        <header class="page-header">
+            <h1>My Projects</h1>
+            <p>Embedded Systems, Engineering, and Automation</p>
+        </header>
+
+        <nav class="page-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+
+        <main>
+            <article class="project-card">
+                <p class="eyebrow">CS50x Final Project · Embedded Systems</p>
+                <h2>RFID-Controlled Safe Box</h2>
+                <p>A working prototype that connects my electrical experience with programming: an ESP32 controls a servo-operated latch, an RFID reader checks for an authorized card, and a magnetic reed switch detects the lid position.</p>
+                <div class="project-layout">
+                    <div>
+                        <h3>How it works</h3>
+                        <p>The box locks after the lid closes and unlocks when an authorized RFID card is scanned. The lid sensor helps the program manage the locking sequence and reset the mechanism after the lid opens.</p>
+                        <h3>What I built</h3>
+                        <p>I combined the electronics, wiring, mechanical latch, and control logic into one physical project. The firmware uses C++ with the Arduino framework and PlatformIO, with timers to coordinate the reader, sensor, and servo.</p>
+                        <ul class="project-features">
+                            <li>ESP32 microcontroller</li>
+                            <li>MFRC522 RFID reader</li>
+                            <li>Magnetic reed switch and servo latch</li>
+                            <li>C++ · Arduino · PlatformIO</li>
+                        </ul>
+                        <a class="primary-button" href="https://www.youtube.com/shorts/wotI6dJordg" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+                    </div>
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube-nocookie.com/embed/wotI6dJordg" title="Malachi Bell's RFID-controlled safe box demonstration" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,406 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.navbar {
+    background-color: #1f2937;
+    padding: 15px;
+}
+
+.menu-button {
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.menu-links {
+    display: none;
+    margin-top: 10px;
+
+}
+
+.menu-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-links.show {
+    display: block;
+}
+
+.navbar-toggler {
+    border: 2px solid white;
+}
+
+
+.navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+
+.nav-link {
+    color: white;
+    margin: 5px 0;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Background for Projects page */
+.projects-page {
+    background:
+        radial-gradient(circle at 20% 20%, #2563eb 0%, transparent 35%),
+        linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+}
+
+/* Background for Skills page */
+.skills-page {
+    background:
+        radial-gradient(circle at 80% 20%, #14b8a6 0%, transparent 35%),
+        linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+}
+
+/* Background for Resume page */
+.resume-page {
+    background:
+        radial-gradient(circle at 50% 10%, #8b5cf6 0%, transparent 35%),
+        linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+}
+
+/* Improve the white content box */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+/* Larger professional header */
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 19px;
+    margin: 0;
+}
+
+/* Professional navigation bar */
+.navbar {
+    background-color: #111827;
+    padding: 15px 25px;
+}
+
+/* Hamburger button */
+.menu-button {
+    padding: 8px 14px;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+/* Dropdown container */
+.menu-links {
+    display: none;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #1e293b;
+    border-radius: 10px;
+    max-width: 220px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Dropdown links */
+.menu-links a {
+    display: block;
+    color: #e2e8f0;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin: 4px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: white;
+    background-color: #2563eb;
+    text-decoration: none;
+    transform: translateX(5px);
+}
+
+.menu-links.show {
+    display: block;
+}
+
+/* Page content */
+main {
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+main h1,
+main h2 {
+    color: #0f172a;
+}
+
+main h1 {
+    font-size: 36px;
+}
+
+main h2 {
+    font-size: 27px;
+}
+
+main p,
+main li {
+    color: #334155;
+    font-size: 17px;
+}
+.page-header {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(15, 23, 42, 0.9);
+    color: white;
+}
+
+.page-header h1 {
+    margin: 0;
+    color: white;
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.page-header p {
+    margin: 12px 0 0;
+    color: #cbd5e1;
+    font-size: 19px;
+}
+
+.page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px;
+    background-color: #111827;
+}
+
+/* Project demonstration and apprenticeship certificate */
+* { box-sizing: border-box; }
+main { width: calc(100% - 32px); }
+.eyebrow { color: #1d4ed8; font-size: 14px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+.project-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 320px); gap: 32px; align-items: start; }
+.project-features { padding-left: 22px; margin-bottom: 28px; }
+.video-frame { aspect-ratio: 9 / 16; overflow: hidden; border-radius: 12px; background: #0f172a; }
+.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.certificate-card { margin-top: 36px; padding-top: 24px; border-top: 1px solid #cbd5e1; }
+.certificate-preview { display: block; margin: 24px 0; }
+.certificate-preview img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; }
+a:focus-visible, button:focus-visible { outline: 3px solid #38bdf8; outline-offset: 4px; }
+@media (max-width: 700px) {
+    .project-layout { grid-template-columns: 1fr; }
+    .video-frame { width: 100%; max-width: 320px; margin: 0 auto; }
+    main, .home-content { padding: 24px; margin-top: 24px; }
+    .page-header h1 { font-size: 38px; }
+    .page-nav { gap: 8px; }
+    .page-nav a { padding: 8px 12px; font-size: 15px; }
+}
+
+.page-nav a {
+    padding: 10px 20px;
+    color: #e2e8f0;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #475569;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.page-nav a:hover {
+    color: white;
+    background-color: #2563eb;
+    border-color: #60a5fa;
+    transform: translateY(-2px);
+}
+
+main {
+    color: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+main h2 {
+    color: #0f172a;
+    font-size: 30px;
+}
+
+main p {
+    color: #334155;
+    font-size: 18px;
+}
+/* Homepage background */
+.home-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 20% 20%, #2563eb 0%, transparent 35%),
+        radial-gradient(circle at 85% 70%, #14b8a6 0%, transparent 30%),
+        linear-gradient(135deg, #020617, #0f172a);
+}
+
+/* Homepage header */
+.home-header {
+    padding: 80px 20px 65px;
+    text-align: center;
+    background-color: rgba(15, 23, 42, 0.75);
+    color: white;
+}
+
+.home-header h1 {
+    margin: 8px 0 15px;
+    color: white;
+    font-size: 64px;
+    letter-spacing: 3px;
+}
+
+.intro-label,
+.section-label {
+    margin: 0;
+    color: #38bdf8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.home-subtitle {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 20px;
+}
+
+/* Homepage content card */
+.home-content {
+    padding: 45px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.96);
+}
+
+.home-content h2 {
+    max-width: 700px;
+    margin: 12px auto 20px;
+    color: #0f172a;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.home-content p {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Homepage buttons */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 13px 22px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.primary-button {
+    color: white;
+    background-color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.secondary-button {
+    color: #2563eb;
+    background-color: transparent;
+    border: 2px solid #2563eb;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    color: white;
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* Adjust homepage for smaller screens */
+@media (max-width: 600px) {
+    .home-header h1 {
+        font-size: 44px;
+    }
+
+    .home-content h2 {
+        font-size: 28px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+}

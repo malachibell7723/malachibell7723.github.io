@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <title>Malachi Bell | Embedded Systems</title>
+    </head>
+
+    <body class="home-page">
+        <header class="home-header">
+            <p class="intro-label">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Malachi Bell</h1>
+
+            <p class="home-subtitle">
+                Electrical Technician | Learning C & Embedded Programming | Industrial Automation
+            </p>
+        </header>
+
+        <nav class="navbar">
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <div class="menu-links" id="menuLinks">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </nav>
+
+        <main class="home-content">
+            <p class="section-label">ABOUT ME</p>
+
+            <h2>Building the connection between hardware and software.</h2>
+
+            <p>
+                I am an ambitious electrical technician with a background in
+                machine building and industrial automation. I enjoy understanding
+                how things work and turning what I learn into practical projects.
+            </p>
+            <p>
+                I am learning C and developing my skills in other programming
+                languages with the goal of programming chips and microcontrollers.
+                My focus is embedded systems: writing the software that helps
+                electronic hardware read sensors, control devices, and respond
+                to the world around it.
+            </p>
+            <p>
+                Completing CS50x and building my ESP32 RFID-controlled safe box
+                are steps toward that goal. I am continuing to learn, practice,
+                and build projects that connect my electrical experience with
+                programming.
+            </p>
+
+            <div class="home-buttons">
+                <a class="primary-button" href="projects.html">
+                    View My Projects
+                </a>
+
+                <a class="secondary-button" href="skills.html">
+                    Explore My Skills
+                </a>
+            </div>
+        </main>
+
+        <script>
+            const menuButton = document.querySelector("#menuButton");
+            const menuLinks = document.querySelector("#menuLinks");
+
+            menuButton.addEventListener("click", function() {
+                menuLinks.classList.toggle("show");
+            });
+        </script>
+    </body>
+</html>
